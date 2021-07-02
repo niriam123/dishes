@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size:13px;
+    background-color: #fafafa;
+    color:black;
+    width:100%;
+    max-width: 1440px;
+    font-family: 'Tinos', serif;
+    margin:0 auto;
+    padding:0;
+}
+html,body{
+    height:100%;
+    max-height: 100%;
+}
+img{
+    max-width: 100%;
+}
+main{
+    padding-top:35px;
+    height: 100%;
+    width:100%;
+}
+/* **************** aside section start**************** */
+aside{
+    float: left;
+    width: 340px;
+    height: 100%;
+    padding-left:75px;
+}
+
+aside h1{
+    font-size: 40px;
+    color:black;
+    margin-bottom: 50px;
+}
+aside  .openbtn{
+    display: none;
+}
+aside .sidenav .closebtn{
+    display: none;
+}
+aside span.cart{
+    display: none;
+}
+aside .sidenav ul{
+    margin:0;
+    padding:0;
+}
+aside .sidenav ul li{
+    display: block;
+    margin-bottom:40px ;
+}
+aside .sidenav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#8f8f8f;
+    font-weight: 400;
+    padding:15px 25px;
+    transition: ease-in-out 0.5s;
+}
+aside .sidenav ul li a:hover{
+    background-color: #ff4e4e;
+    color:white;
+}
+aside .sidenav button{
+    border:none;
+    background-color: #ff4e4e;
+    color:white;
+    font-size: 18px;
+    padding:15px 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+aside .sidenav button:hover{
+    transition: ease-in-out 0.5s;
+    background-color: white;
+    color:#ff4e4e;
+}
+/* **************** aside section end**************** */
+/* **************** lunch section  start**************** */
+#lunch-section{
+    float: left;
+    width: calc(100% - 340px);
+    margin-top:95px;
+}
+.lunch-top-heading{
+    float: left;
+    display: inline;
+    width: calc(100% - 335px);
+    margin-top: -15px;
+}
+#lunch-section .lunch-section-top h1{ 
+    font-size: 65px;
+    line-height: 80px;
+    color:black;
+    font-weight: 700;
+}
+
+.lunch-section-top .lunch-top-para{
+    float: left;
+    width: 200px;
+    display: inline;
+}
+#lunch-section .lunch-section-top p{ 
+    font-size: 16px;
+    line-height: 20px;
+    color:#626262;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+#border-bottom{
+    width:70px;
+    height:3px;
+    background-color: #ff4e4e;
+}
+.lunch-section-bottom{
+    display: none;
+}
+#lunch-section .lunch-dishes-list{
+    padding-top: 85px;
+    padding-bottom: 25px;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+#lunch-section .lunch-dishes-list .lunch-dish-item{
+    width:202px;
+    height:255px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.4) 0px 20px 40px;
+    margin:0 10px 20px;
+    padding:30px 30px 35px 30px;
+    float: left;
+    background-color: white;
+}
+#lunch-section .lunch-dishes-list .lunch-dish-item:last-child{
+    margin-right:0;
+}
+#lunch-section .lunch-dishes-list .lunch-dish-item figure{
+    margin-bottom: 32px;
+}
+#lunch-section .lunch-dishes-list .lunch-dish-item figure img{
+    width: 145px;
+    height:145px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+#lunch-section .lunch-dishes-list .lunch-dish-item figcaption{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+}
+/* **************** lunch section end **************** */
+
+
+/* **************** responsive design media query ************** */
+@media screen and (max-width:1200px) {
+    /* *********** lunch section start******* */
+    .lunch-top-heading{
+        width: calc(100% - 200px);
+    }
+    #lunch-section .lunch-section-top h1{
+        font-size: 55px;
+    }
+     /* *********** lunch section end******* */
+}
+
+@media screen and (max-width:992px) {
+    /* *********** lunch section start******* */
+    #lunch-section{
+        margin-top: 0;
+    }
+    .lunch-top-heading{
+        margin-top: 0;
+        width: 100%;
+    }
+    #lunch-section .lunch-section-top h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .lunch-section-top .lunch-top-para{
+        display: none;
+    }
+    #lunch-section .lunch-dishes-list{
+        padding-top: 50px;
+    }
+    #lunch-section .lunch-dishes-list .lunch-dish-item{
+        width: 190px;
+    }
+    .lunch-section-bottom{
+        display: block;
+        padding-bottom: 40px;
+    }
+    .lunch-section-bottom p{
+        font-size: 20px;
+    }
+    /* *********** lunch section end******* */
+}
+
+@media screen and (max-width:768px) {
+    /* ************** aside section start ****** */
+    main{
+        padding: 35px 20px 0 20px;
+        height: 100%;
+    }
+    aside{
+        display: block;
+        float: none;
+        width: 100%;
+        margin:0 auto;
+        text-align: center;
+        padding-left: 0;
+        height: 100px;
+    }
+    aside h1{
+        font-size: 32px;
+    }
+    aside .openbtn{
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        left:20px;
+        color:#ff4e4e;
+    }
+    aside .cart{
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 34px;
+        color:#ff4e4e;
+    }
+    aside h1 span{
+        display: none;
+    }
+    #lunch-section{
+        display: block;
+        float: none;
+        width: 100%;
+        clear: both;
+        overflow: hidden;
+    }
+    aside .sidenav .closebtn{
+        display: block;
+    }
+    aside .openbtn{
+        display: block;
+    }
+    aside span.cart {
+        display: block;
+    }
+    aside .sidenav {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+      }
+      
+      aside .sidenav ul li a {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+      }
+      aside .sidenav ul li a:hover {
+        color: #f1f1f1;
+      }
+      aside .sidenav button{
+        margin-top: 0;
+        font-size: 16px;
+    }
+      aside .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        text-decoration: none;
+        color:#ff4e4e;
+      }
+      /* ************** aside section end ****** */
+}
+@media screen and (max-width:460px) {
+    /* *********** main section start ****** */
+    main{
+        padding: 35px 10px 0 10px;
+        height: 100%;
+    }
+     /* *********** main section start ****** */
+     /* *********** lunch section start ********* */
+    #lunch-section .lunch-section-top h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    #lunch-section .lunch-dishes-list .lunch-dish-item{
+        padding: 10px;
+        width:130px;
+        height: 180px;
+    }
+    #lunch-section .lunch-dishes-list{
+        padding-top: 30px;
+    }
+    #lunch-section .lunch-dishes-list .lunch-dish-item figure img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    #lunch-section .lunch-dishes-list .lunch-dish-item figure{
+        margin-bottom: 20px;
+    }
+    #lunch-section .lunch-dishes-list .lunch-dish-item figcaption{
+        font-size: 16px;
+    }
+    /* *********** lunch section end ********* */
+}

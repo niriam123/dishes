@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--------------- google font-link ---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!----------- Font-awesome---------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!---------------- normal css-------------------------->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <!------------------------------ Main section start------------------>
+   <main>
+       <!------------------------------ aside section start------------------>
+       <aside>
+        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776; </span>
+        <h1 class="heading">Lorem <br>  <span>Ipsum</span> </h1>
+        <span class="cart"><i class="fas fa-shopping-cart cart-icon"></i></span>
+        <nav id="mySidenav" class="sidenav"> 
+            <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Cuisine</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Book</a></li>
+            </ul>
+            <button>Cart</button>
+        </nav>
+       </aside>
+        <!------------------------------ aside section start------------------>
+        <!--------------------- Lunch section start---------------->
+      <section id="lunch-section">
+        <div class="lunch-section-top">
+            <div class="lunch-top-heading">
+                <h1>What are you <br> having for Lunch?</h1>
+            </div>
+            <div class="lunch-top-para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et.</p>
+                <div id="border-bottom"></div>
+            </div>
+        </div>
+        <div class="lunch-dishes-list scrollmenu">
+            <div class="lunch-dish-item">
+                <figure>
+                    <img src="https://media.istockphoto.com/photos/three-mexican-pork-carnitas-tacos-flat-lay-composition-picture-id599704698?k=6&m=599704698&s=612x612&w=0&h=eggEQnLc8jOifatD0dHUqSi69Z5aXQlNNau19u2M6Ek=" alt="mexicon taco">
+                </figure>
+                <figcaption>Mexicon Taco</figcaption>
+            </div>
+            <div class="lunch-dish-item">
+                <figure>
+                    <img src="https://1.bp.blogspot.com/--1xcjFJ_xsI/XPTLq1AmM9I/AAAAAAAAADU/CHKlN2AaXyAXFTiY6L7VwgeU9B-cbYxJACLcBGAs/s1600/vegetables-pizza-restaurant.jpg" alt="Farmhouse Pizza">
+                </figure>
+                <figcaption>Farmhouse Pizza</figcaption>
+            </div>
+            <div class="lunch-dish-item">
+                <figure>
+                    <img src="https://106fyz3cd4vi2lc2uq1tlyl4-wpengine.netdna-ssl.com/wp-content/uploads/2020/09/Moist-Chicken-Burgers.jpg" alt="Chicken Burger">
+                </figure>
+                <figcaption>Chicken Burger</figcaption>
+            </div>
+            <div class="lunch-dish-item">
+                <figure>
+                    <img src="https://res.cloudinary.com/hsxfx8igq/image/upload/t_16x9_recipe_image,f_auto/v1620227109/nachos_b4w6d2.jpg">
+                </figure>
+                <figcaption>Loaded Nachos</figcaption>
+            </div>
+            <div class="lunch-dish-item">
+                <figure>
+                    <img src="https://www.thestatesman.com/wp-content/uploads/2019/08/hakka-noodles.jpg" alt="Hakka Noodles">
+                </figure>
+                <figcaption>Hakka Noodles</figcaption>
+            </div>
+        </div>
+        <div class="lunch-section-bottom">
+            <div class="lunch-bottom-para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et.</p>
+                <div id="border-bottom"></div>
+            </div>
+        </div>
+      </section>
+      <!--------------------- Lunch section end ---------------->
+    </main>
+     <!------------------------------ Main section end ------------------>
+        
+   <script>
+ /* Open the sidenav */
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+   </script>
+  
+   
+</body>
+</html>
